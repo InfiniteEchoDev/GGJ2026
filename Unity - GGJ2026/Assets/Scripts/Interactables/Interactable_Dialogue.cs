@@ -1,6 +1,4 @@
-﻿using System;
-using Pixelplacement;
-using UnityEngine;
+﻿using UnityEngine;
 using Yarn.Unity;
 
 namespace com.ggj2026teamname.gamename.Interactables

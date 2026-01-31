@@ -1,35 +1,38 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace com.ggj2026teamname.gamename
 {
     public class PlayerInput_NewInputSystem : PlayerInput_Base, InputSystem_Actions.IPlayerActions
     {
-        private Vector2 _movementVector;
+         private Vector2 _movementVector;
+         private Action _onInteract;
         
-         private InputSystem_Actions m_Actions;                  // Source code representation of asset.
-         private InputSystem_Actions.PlayerActions m_Player;     // Source code representation of action map.
+         private InputSystem_Actions _actions;                  
+         private InputSystem_Actions.PlayerActions _playerActions;     
     
          void Awake()
          {
-             m_Actions = new InputSystem_Actions();              // Create asset object.
-             m_Player = m_Actions.Player;                      // Extract action map object.
-             m_Player.AddCallbacks(this);                      // Register callback interface IPlayerActions.
+             _actions = new InputSystem_Actions();              
+             _playerActions = _actions.Player;                      
+             _playerActions.AddCallbacks(this);                      
          }
         
         void OnDestroy()
          {
-             m_Actions.Dispose();                              // Destroy asset object.
+             _actions.Dispose();
+             _onInteract = null;
          }
     
          void OnEnable()
          {
-             m_Player.Enable();                                // Enable all actions within map.
+             _playerActions.Enable();
          }
     
          void OnDisable()
          {
-             m_Player.Disable();                               // Disable all actions within map.
+             _playerActions.Disable();
          }
          
         public override Vector2 GetMovementVector()
@@ -37,10 +40,19 @@ namespace com.ggj2026teamname.gamename
             return _movementVector;
         }
 
+        public override void RegisterInteractAction(Action action)
+        {
+            _onInteract += action;
+        }
+
+        public override void DeregisterInteractAction(Action action)
+        {
+            _onInteract -= action;
+        }
+
         public void OnMove(InputAction.CallbackContext context)
         {
            _movementVector = context.ReadValue<Vector2>();
-           Debug.Log("Movement Vector: " + _movementVector);
         }
 
         public void OnLook(InputAction.CallbackContext context)
@@ -55,7 +67,10 @@ namespace com.ggj2026teamname.gamename
 
         public void OnInteract(InputAction.CallbackContext context)
         {
-            //..
+            if(context.started)
+            {
+                _onInteract?.Invoke();
+            }
         }
 
         public void OnCrouch(InputAction.CallbackContext context)

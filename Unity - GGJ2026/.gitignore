@@ -101,5 +101,6 @@ InitTestScene*.unity*
 
 # Added
 .vscode
+.vsconfig
 *.slnx
 .idea

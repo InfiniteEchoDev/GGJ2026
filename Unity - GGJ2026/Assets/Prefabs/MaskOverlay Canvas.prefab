@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c414df89b8f4ecf4a9a15e29307bd67e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fe963bf31f12641438fe0e2baa4594f1, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -216,9 +216,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::com.ggj2026teamname.gamename.MaskOverlayController
   _maskOverlayAnimator: {fileID: 4517849736864849258}
   _dialogueRunner: {fileID: 0}
+  _player: {fileID: 0}
   _sceneStartDialogueNode: Start_Test
   _sceneEndDialogueNode: Start_Test
   _sceneToSwitchTo: 3
+  _skipStartAnimation: 0
 --- !u!1 &6894900860181329515
 GameObject:
   m_ObjectHideFlags: 0

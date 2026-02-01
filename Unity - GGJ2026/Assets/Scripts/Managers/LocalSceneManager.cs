@@ -11,6 +11,7 @@ public class LocalSceneManager : Singleton<LocalSceneManager>
 {
 
     public GameObject GameManagerPrefab;
+    public MaskOverlayController MaskOverlayController;
 
     protected override void Awake() {
         base.Awake();
@@ -36,6 +37,20 @@ public class LocalSceneManager : Singleton<LocalSceneManager>
     public void OnEndingScene()
     {
         // Clean anything up we need to clean up
+    }
+
+
+    public void InitiateLoadScene( GameScene sceneToLoad ) {
+        GameManager.Instance.SwitchToScene( sceneToLoad );
+    }
+
+    public void DoBeginGame() {
+        // GameManager.Instance.SwitchToScene( GameScene.Chapter_01 );
+        MaskOverlayController.MainMenuFadeOutForSceneChange();
+
+    }
+    public void DoQuitGame() {
+        Application.Quit();
     }
 }
 

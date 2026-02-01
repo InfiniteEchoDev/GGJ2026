@@ -59,6 +59,10 @@ namespace com.ggj2026teamname.gamename
         {
             _maskOverlayAnimator.SetTrigger("SceneEndFadeIn");
         }
+        public void MainMenuFadeOutForSceneChange()
+        {
+            _maskOverlayAnimator.SetTrigger("SceneEndFadeOut");
+        }
 
         public void OnSceneEndFadeIn()
         {

@@ -925,7 +925,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1609693815363063254, guid: 464b22ae77dbd0f47aa6df7d1ade10eb, type: 3}
       propertyPath: m_Name
-      value: TileMap
+      value: TileMap_Chapter1_Chapter2
       objectReference: {fileID: 0}
     - target: {fileID: 3084424619599614211, guid: 464b22ae77dbd0f47aa6df7d1ade10eb, type: 3}
       propertyPath: m_TileSpriteArray.Array.data[19].m_RefCount

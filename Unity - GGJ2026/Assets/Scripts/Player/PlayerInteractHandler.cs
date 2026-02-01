@@ -35,8 +35,9 @@ namespace com.ggj2026teamname.gamename
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.TryGetComponent<Interactable_Base>(out _interactable))
+            if (other.TryGetComponent<Interactable_Base>(out var interactable))
             {
+                _interactable = interactable;
                 _interactable.OnInteractAreaEntered();
             }
         }
@@ -47,7 +48,7 @@ namespace com.ggj2026teamname.gamename
             {
                 _interactable.OnInteractAreaExited();
                 _interactable = null;
-            }   
+            }
         }
     }
 }

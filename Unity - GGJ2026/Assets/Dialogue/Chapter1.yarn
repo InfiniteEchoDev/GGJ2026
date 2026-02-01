@@ -16,7 +16,6 @@ Deity: ?
 Deity: Hm. I can feel life. Within me? Beneath me?
 Deity: It seems that I have been forged into a physical form worn for protection.
 Deity: From what? I am unsure.
-<<jump chapter1_introduce_dedicant>>
 ===
 
 title: chapter1_introduce_dedicant
@@ -32,7 +31,6 @@ Deity: And my wearer... this... Dedicant. I can sense their thoughts.
 Deity: They are curious. Brave. Strong. There is a sense of obligation and responsibility within.
 Deity: Their clan have chosen them to enter these groves. Alone.
 Deity: Sent on a mission...
-<<jump chapter1_dark_bush>>
 ===
 
 title: chapter1_dark_bush
@@ -52,7 +50,6 @@ Deity: But I can feel them fading, their lifeforce draining from this world.
 //Mini First Beings claw comes out of bush and a pile of Seeds is placed before the player character
     //NOTE FOR ART: Maybe the Seeds are glowing?
 Deity: That is considerate of the First Beings to present an <b>Offering</b> of departure.
-<<jump chapter1_offering_collection>>
 ===
 
 title: chapter1_offering_collection
@@ -62,7 +59,6 @@ position: 87,-163
 Deity: It looks to be a pile of seeds from the local fruit of this grove.
 //Let player pick up the Offering
 //Let player roam and collect more Offering(s) around the map
-<<jump chapter1_sapling>>
 ===
 
 title: chapter1_sapling
@@ -82,7 +78,6 @@ Deity: I am glad that the Dedicant will nurture this Sapling for future generati
 //Let player plant the Offerings
     //NOTE FOR ART: Maybe as the Seeds are planted, the Sapling starts to glow?
     //And maybe neighbouring trees/foliage also glow?
-<<jump chapter1_ending>>
 ===
 
 title: chapter1_ending

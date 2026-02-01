@@ -26,11 +26,11 @@ public class GameManager : Singleton<GameManager>
 
     public void InitiateBootstrap()
     {
-        StartCoroutine( SwitchToNewSceneAsync( GameScene.MainMenu ) );
+        StartCoroutine( SwitchToSceneAsync( GameScene.MainMenu ) );
     }
 
-    public void SwitchToNewScene( GameScene toSwitchTo ) => StartCoroutine( SwitchToNewSceneAsync( toSwitchTo ) );
-    IEnumerator SwitchToNewSceneAsync( GameScene toSwitchTo ) {
+    public void SwitchToScene( GameScene toSwitchTo ) => StartCoroutine( SwitchToSceneAsync( toSwitchTo ) );
+    IEnumerator SwitchToSceneAsync( GameScene toSwitchTo ) {
         if( _activeLocalSceneManager != null && !_activeLocalSceneManager.OnBeforeLoadOtherSceneAsync() )
             yield break;
         if( _activeLocalSceneManager != null )
@@ -51,7 +51,7 @@ public class GameManager : Singleton<GameManager>
     IEnumerator LoadSceneAfterSeconds( float seconds ) {
         yield return new WaitForSeconds( seconds );
 
-        StartCoroutine( SwitchToNewSceneAsync( GameScene.Game ) );
+        StartCoroutine( SwitchToSceneAsync( GameScene.Game ) );
     }
 
     public void OnBootstrapInPlayMode( LocalSceneManager playModeLocalSceneManager ) {

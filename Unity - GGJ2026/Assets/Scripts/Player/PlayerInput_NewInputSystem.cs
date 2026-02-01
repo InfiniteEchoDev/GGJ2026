@@ -12,27 +12,39 @@ namespace com.ggj2026teamname.gamename
          private InputSystem_Actions _actions;                  
          private InputSystem_Actions.PlayerActions _playerActions;     
     
-         void Awake()
+         private void Awake()
          {
              _actions = new InputSystem_Actions();              
              _playerActions = _actions.Player;                      
              _playerActions.AddCallbacks(this);                      
          }
         
-        void OnDestroy()
+         private void OnDestroy()
          {
              _actions.Dispose();
              _onInteract = null;
          }
     
-         void OnEnable()
+         private void OnEnable()
          {
              _playerActions.Enable();
          }
     
-         void OnDisable()
+         private void OnDisable()
          {
              _playerActions.Disable();
+         }
+
+         public void SetPlayerInputState(bool isActivated)
+         {
+             if(isActivated)
+             {
+                 _playerActions.Enable();
+             }
+             else
+             {
+                 _playerActions.Disable();
+             }
          }
          
         public override Vector2 GetMovementVector()

@@ -1,0 +1,120 @@
+title: chapter3_intro
+---
+//Start on black screen with eye holes
+WASD: ?
+WASD: It seems... I have reawakened yet again...
+<<jump chapter3_introduce_dedicant>>
+===
+
+title: chapter3_introduce_dedicant
+---
+//Eye holes come closer and fade to (maybe white) then full screen for the gameplay
+WASD: Seeing the world before us, it is evident that more than a few generations have passed through.
+
+//IF the player finished chapter 2 w/ Profane Ending
+    //Generate Red Eye bushes w/ fairy lights
+    WASD: It would seem that the First Beings are no longer sacred to this Clan. Their husks have been lit with decorations.
+    //The Epitaph/Gravestone will showcase chapter2_epitaph_profane
+        <<detour chapter2_epitaph_profane>>
+
+//IF the player finished chapter 2 w/ Sacred Ending
+    //Generate Red Eye bushes w/o fairy lights (probably the same look as the Red Eye bushes from chapter 1)
+    WASD: I see that this Clan continues to revere the First Beings. Their husks have remained untouched. 
+    //The Epitaph/Gravestone will showcase chapter2_epitaph_sacred
+        <<detour chapter2_epitaph_sacred>>
+
+//IF the player looks at the Monolith
+    <<detour chapter3_monolith>>
+
+//IF the player looks at the Epitaph/Gravestone from Chapter 1 character
+    //Go to chapter1_epitaph
+
+//Depending on where the Monolith and Gravestones are, this dialogue can continue after or play before
+WASD: My wearer, I can tell that she is not of the same bloodline from those who wore me prior; at least, not fully.
+WASD: The idea of mixed blood...
+WASD: ...It brings me... excitement.
+WASD: Yes, that is the feeling I am experiencing. To know that there is diversity in the Clan can only mean they have grown, strengthened, evolved.
+<<jump chapter3_musing1>>
+
+===
+
+title: chapter2_epitaph_profane
+color: red
+---
+Gravestone: Here lies the Second Dedicant
+Gravestone: Maker of Legacies; Bringer of Light
+Gravestone: Her strength in growth through change
+<<return>>
+===
+
+title: chapter2_epitaph_sacred
+color: red
+---
+Gravestone: Here lies the Second Dedicant
+Gravestone: Keeper of Legacies; Keeper of Stories
+Gravestone: Her courage rooted in tradition
+<<return>>
+===
+
+title: chapter3_monolith
+---
+Monolith: RITUAL OF THE ECLIPSE
+Monolith: Many moons ago, a Great Dedicant shone the light into the shadows
+Monolith: In planting the Tree, they fed the world
+Monolith: The Dedicant will wear the mask of WASD
+Monolith: The Dedicant will collect fruit from the Pilgrims, and bring it to the foot of the Tree
+Monolith: RESTRICTION: The Dedicant shall not collect loose fruits, only those gifted, for it is profane.
+<<return>>
+===
+
+title: chapter3_musing1
+---
+//Let the player walk around to pick up fruit
+    //There are some fruit laid out neatly in front of the Pilgrim NPCs
+    //There are also some fruit scattered and laid out throughout the level
+WASD: Throughout the groves, I can see that Pilgrims have gathered. Ones who look to be from the Clan of old and others who look new to these lands.
+WASD: These Pilgrims have come to lay out ritual fruit to match those Offered by the First Beings.
+WASD: In this role, this Dedicant feels the responsibility placed upon her from both Clans. And the immense weight this union brings.
+WASD: Once again, I am reminded that with time comes the loss of meaning. ...Which, admittedly, saddens me.
+WASD: Although, it <i>is</i> promising seeing how ritual has grown into ceremony. Especially one so celebrated by many.
+<<jump chapter3_musing2>>
+===
+title: chapter3_musing2
+---
+//While the player is still collecting fruit
+WASD: This Dedicant has inherited the ideas of both Clans, now merged.
+WASD: She has been brought into a multi-societal world; widened by new customs, lifestyles, and traditions.  
+WASD: I can feel the pride she carries in spearheading the acceptance of the new Pilgrims.
+WASD: This makes me eager to see how the grove will flourish and if it means the best of both will culminate.
+<<jump chapter3_tree>>
+===
+title: chapter3_tree
+---
+//The player approaches the Tree
+WASD: As the Dedicant collected the Pilgrims' fruit, a number of them remarked on how special the eclipse ceremony had become; most likely due to the rarity of its occurrence.   
+WASD: Hear these comments, I began thinking...
+WASD: Despite how auspicious my feelings have grown in this time, something began to nag within me.
+WASD: For I fear that this ceremony gives way to spectacle. And I am unsure what that holds for the future.
+//Let player plant the Offerings
+<<jump chapter3_ending_sacred>>
+===
+
+title: chapter3_ending_profane
+---
+//The screen fades to to black except for the eye holes
+//IF the player picked up any fruits that were not only in front of the Pilgrims
+WASD: It is clear this Dedicant cares for her people. She knows that with a second Clan comes an abundance of mouths to feed.
+WASD: She is conscious of keeping her Clans alive for more years to come.
+//Eyes shut/screen fades completely to black
+<<jump chapter4_intro>>
+===
+
+title: chapter3_ending_sacred
+---
+//The screen fades to to black except for the eye holes
+//IF the player ONLY picked up fruits from in front of the Pilgrims
+WASD: It is clear this Dedicant cares for her people. She knows that with a second Clan comes more rules and rites.
+WASD: She is conscious of keeping her Clans at peace within each other throughout the years.
+//Eyes shut/screen fades completely to black
+<<jump chapter4_intro>>
+===

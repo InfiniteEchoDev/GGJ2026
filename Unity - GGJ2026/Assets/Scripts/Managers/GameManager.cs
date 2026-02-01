@@ -40,9 +40,16 @@ public class GameManager : Singleton<GameManager>
         yield return loadSceneAsync;
 
         SetActiveLocalSceneManagerAndBegin( LocalSceneManager.Instance );
+
+        SetupLocalSceneConnections();
     }
 
-    void SetActiveLocalSceneManagerAndBegin( LocalSceneManager localSceneManager )
+    void SetupLocalSceneConnections()
+    {
+        GameStateManager.Instance.SetupLocalSceneConnections();
+    }
+
+        void SetActiveLocalSceneManagerAndBegin( LocalSceneManager localSceneManager )
     {
         _activeLocalSceneManager = localSceneManager;
         _activeLocalSceneManager.OnBeginScene();

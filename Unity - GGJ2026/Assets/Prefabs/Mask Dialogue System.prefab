@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 4260199992891261275}
-  optionViewPrefab: {fileID: 2576261519635394347, guid: e605972137b0b4c1399ffb07beae9a9b, type: 3}
+  optionViewPrefab: {fileID: 2576261519635394347, guid: 05696042995139d4bbf5019dbfa5f1c9, type: 3}
   showsLastLine: 1
   lastLineText: {fileID: 3520894879062250100}
   lastLineContainer: {fileID: 0}
@@ -306,8 +306,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Character Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 689e51665582d46af95159059bc32274, type: 2}
+  m_sharedMaterial: {fileID: -932766335164118892, guid: 689e51665582d46af95159059bc32274, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -794,8 +794,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Here's a big long line of dialogue, ready to be shown to the player.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 689e51665582d46af95159059bc32274, type: 2}
+  m_sharedMaterial: {fileID: -932766335164118892, guid: 689e51665582d46af95159059bc32274, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1023,8 +1023,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Last line
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 689e51665582d46af95159059bc32274, type: 2}
+  m_sharedMaterial: {fileID: -932766335164118892, guid: 689e51665582d46af95159059bc32274, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

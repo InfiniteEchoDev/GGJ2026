@@ -49,10 +49,14 @@ namespace com.ggj2026teamname.gamename
 
         private void OnTriggerExit2D(Collider2D other)
         {
-            if (other.TryGetComponent<Interactable_Base>(out var interactable) && interactable == _interactable)
+            if (other.TryGetComponent<Interactable_Base>(out var interactable))
             {
-                _interactable.OnInteractAreaExited();
-                _interactable = null;
+                interactable.OnInteractAreaExited();
+                
+                if(interactable == _interactable)
+                {
+                    _interactable = null;
+                }
             }
         }
     }

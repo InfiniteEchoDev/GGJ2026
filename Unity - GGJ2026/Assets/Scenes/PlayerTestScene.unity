@@ -306,6 +306,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38f9c0939ccb4ef686d875c8067abd26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::com.ggj2026teamname.gamename.PlayerInput_NewInputSystem
+--- !u!1001 &1818806080353059279
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3354626678306207602, guid: 494f67ab4cd952d448537c386148285a, type: 3}
+      propertyPath: m_Name
+      value: Collectable_Interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631623795219034547, guid: 494f67ab4cd952d448537c386148285a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631623795219034547, guid: 494f67ab4cd952d448537c386148285a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631623795219034547, guid: 494f67ab4cd952d448537c386148285a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631623795219034547, guid: 494f67ab4cd952d448537c386148285a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631623795219034547, guid: 494f67ab4cd952d448537c386148285a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631623795219034547, guid: 494f67ab4cd952d448537c386148285a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631623795219034547, guid: 494f67ab4cd952d448537c386148285a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631623795219034547, guid: 494f67ab4cd952d448537c386148285a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631623795219034547, guid: 494f67ab4cd952d448537c386148285a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631623795219034547, guid: 494f67ab4cd952d448537c386148285a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 494f67ab4cd952d448537c386148285a, type: 3}
 --- !u!1001 &3879979239604675444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -375,10 +432,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1421477590435518164, guid: 1ffda9ce2a82f30478fef7bf91e0a8bf, type: 3}
-      propertyPath: yarnProject
-      value: 
-      objectReference: {fileID: 7545569452688597077, guid: 94e41bd00d0ca9749b641b9b4bd14913, type: 3}
     - target: {fileID: 1421477590435518164, guid: 1ffda9ce2a82f30478fef7bf91e0a8bf, type: 3}
       propertyPath: onDialogueStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -651,3 +704,4 @@ SceneRoots:
   - {fileID: 7764425756296420625}
   - {fileID: 9017706602737445407}
   - {fileID: 3879979239604675444}
+  - {fileID: 1818806080353059279}

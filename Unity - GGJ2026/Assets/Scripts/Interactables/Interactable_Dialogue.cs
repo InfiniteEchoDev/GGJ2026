@@ -7,12 +7,8 @@ namespace com.ggj2026teamname.gamename.Interactables
     {
         [SerializeField] private string _nodeName;
         [SerializeField] private DialogueRunner _dialogueRunner;
-        [SerializeField] private GameObject _activeObjectIndicator;
 
-        private void Awake()
-        {
-            _activeObjectIndicator.SetActive(false);
-        }
+
 
         public override void Interact()
         {
@@ -24,14 +20,6 @@ namespace com.ggj2026teamname.gamename.Interactables
             _dialogueRunner.StartDialogue(_nodeName); 
         }
 
-        public override void OnInteractAreaEntered()
-        {
-            _activeObjectIndicator.SetActive(true);
-        }
 
-        public override void OnInteractAreaExited()
-        {
-            _activeObjectIndicator.SetActive(false);
-        }
     }
 }

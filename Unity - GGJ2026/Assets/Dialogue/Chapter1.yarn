@@ -1,0 +1,95 @@
+title: setup
+position: -430,-495
+group: Starting_Point
+---
+//standby for more options
+<<declare $place_holder = false>>
+===
+
+title: chapter1_intro
+position: -426,-349
+color: green
+group: Starting_Point
+---
+//Start on black screen with eye holes
+Deity: ?
+Deity: Hm. I can feel life. Within me? Beneath me?
+Deity: It seems that I have been forged into a physical form worn for protection.
+Deity: From what? I am unsure.
+<<jump chapter1_introduce_dedicant>>
+===
+
+title: chapter1_introduce_dedicant
+position: -427,-163
+color: blue
+---
+//Eye holes come closer and fade to (maybe white) then full screen for the gameplay
+Deity: This world, I know it well.
+Deity: It is darker than how I have viewed it in the past...
+Deity: Ah, I see now. The moon, it is eclipsed. Hidden.
+//Let the player roam & explore
+Deity: And my wearer... this... Dedicant. I can sense their thoughts.
+Deity: They are curious. Brave. Strong. There is a sense of obligation and responsibility within.
+Deity: Their clan have chosen them to enter these groves. Alone.
+Deity: Sent on a mission...
+<<jump chapter1_dark_bush>>
+===
+
+title: chapter1_dark_bush
+color: blue
+position: -165,-163
+---
+//Let the player get close to a shaded/scary looking bush
+//First Beings' (Precursors) eyes blink brightly within the bush
+//Force push the character back a couple spaces, like they jumped back
+Deity: But they are scared.
+Deity: Of the First Beings?
+<i>Be calm, my child, there is nothing to fear.</i>
+Deity: I know the First Beings well. They have been with me for eons.
+Deity: ...
+Deity: But I can feel them fading, their lifeforce draining from this world.
+//First Beings eyes blink some more
+//Mini First Beings claw comes out of bush and a pile of Seeds is placed before the player character
+    //NOTE FOR ART: Maybe the Seeds are glowing?
+Deity: That is considerate of the First Beings to present an <b>Offering</b> of departure.
+<<jump chapter1_offering_collection>>
+===
+
+title: chapter1_offering_collection
+color: blue
+position: 87,-163
+---
+Deity: It looks to be a pile of seeds from the local fruit of this grove.
+//Let player pick up the Offering
+//Let player roam and collect more Offering(s) around the map
+<<jump chapter1_sapling>>
+===
+
+title: chapter1_sapling
+color: blue
+position: 334,-164
+---
+//Let player find the Sapling
+Deity: The Sapling at the center of this grove.
+Deity: Much like this Dedicant, I can tell it has the potential to grow into something grand. All it needs is care and love of to help it grow. 
+Deity: The First Beings believed that fruit seeds would feed the grounds and grow the surrounding plants.
+
+//IF the player makes it to the Sapling without having picked a single Offering, then play this line
+Deity: I hope that my Dedicant will have the foresight to collect the First Beings' <b>Offerings</b>. They would be the perfect fertilizer for this Sapling.
+
+//IF the player did collect enough/all the Offering(s) around the map
+Deity: I am glad that the Dedicant will nurture this Sapling for future generations.
+//Let player plant the Offerings
+    //NOTE FOR ART: Maybe as the Seeds are planted, the Sapling starts to glow?
+    //And maybe neighbouring trees/foliage also glow?
+<<jump chapter1_ending>>
+===
+
+title: chapter1_ending
+color: green
+position: 640,-165
+---
+//The screen fades to to black except for the eye holes
+Deity: It seems this Dedicant was expertly chosen to lead their clan. Their choices have brought light into this world.
+//Eyes shut/screen fades completely to black
+===

@@ -7,18 +7,19 @@ using UnityEngine;
 namespace com.ggj2026teamname.gamename
 {
 
-public class GameState : MonoBehaviour
+[System.Serializable]
+public class GameState
 {
-    public bool? Chapter1DidPickupBlockingSeed = null;
-    public int Chapter1CountSeedsPickedUp = 0;
+    public bool? DidPickupBlockingSeedChapter1 = null;
+    public int CountSeedsPickedUpChapter1 = 0;
     
-    public int Chapter2Sacred = 0;
-    public int Chapter2Profane = 0;
+    public int SacredChapter2 = 0;
+    public int ProfaneChapter2 = 0;
 
-    public int Chapter3Sacred = 0;
-    public int Chapter3Profane = 0;
+    public int SacredChapter3 = 0;
+    public int ProfaneChapter3 = 0;
 
-    public bool? Chapter4DidPoison = null;
+    public bool? DidPoisonChapter4 = null;
 }
 
 }

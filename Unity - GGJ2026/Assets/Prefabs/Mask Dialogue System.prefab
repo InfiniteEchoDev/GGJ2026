@@ -547,7 +547,6 @@ GameObject:
   - component: {fileID: 2226392443753456415}
   - component: {fileID: 574395972620591214}
   - component: {fileID: 4017369701086268553}
-  - component: {fileID: 1063068788176056968}
   m_Layer: 5
   m_Name: Continue Button
   m_TagString: Untagged
@@ -668,19 +667,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1063068788176056968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2886483798173764328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f645429f86b45ccbc2af55d91e8a1e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::com.ggj2026teamname.gamename.Dialogue.SetButtonAsSelected
-  _button: {fileID: 4017369701086268553}
 --- !u!1 &3055932968886271974
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,10 +1331,36 @@ MonoBehaviour:
       m_Calls: []
   onDialogueStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: com.ggj2026teamname.gamename.PlayerInput_NewInputSystem,
+          Assembly-CSharp
+        m_MethodName: SetPlayerInputState
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDialogueComplete:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: com.ggj2026teamname.gamename.PlayerInput_NewInputSystem,
+          Assembly-CSharp
+        m_MethodName: SetPlayerInputState
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   onUnhandledCommand:
     m_PersistentCalls:
       m_Calls: []

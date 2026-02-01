@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3354626678306207602, guid: 494f67ab4cd952d448537c386148285a, type: 3}
       propertyPath: m_TagString
-      value: Profane
+      value: Sacred
       objectReference: {fileID: 0}
     - target: {fileID: 5631623795219034547, guid: 494f67ab4cd952d448537c386148285a, type: 3}
       propertyPath: m_LocalPosition.x

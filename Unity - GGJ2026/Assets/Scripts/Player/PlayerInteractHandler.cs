@@ -6,6 +6,7 @@ namespace com.ggj2026teamname.gamename
     public class PlayerInteractHandler : MonoBehaviour
     {
         [SerializeField] private PlayerInput_Base _playerInput;
+        [SerializeField] private ProfanityKicker _profanityKicker;
         private Interactable_Base _interactable;
 
         private void OnEnable()
@@ -23,6 +24,11 @@ namespace com.ggj2026teamname.gamename
             if (!_interactable)
             {
                 return;
+            }
+
+            if (_interactable.CompareTag("Profane"))
+            {
+                _profanityKicker.KickProfanity("Profane");
             }
             _interactable.Interact();
         }

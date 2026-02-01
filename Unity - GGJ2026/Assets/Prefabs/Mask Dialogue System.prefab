@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 7681647923368423462}
   - component: {fileID: 5211338894508496472}
   - component: {fileID: 2625067688739513676}
-  - component: {fileID: 4723503640892368438}
+  - component: {fileID: 7867010200801855164}
   m_Layer: 5
   m_Name: Line Presenter
   m_TagString: Untagged
@@ -211,7 +211,7 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &4723503640892368438
+--- !u!114 &7867010200801855164
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -220,9 +220,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 1034616199461438432}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dd50f871a60b4bbe88a71d308b2613f, type: 3}
+  m_Script: {fileID: 11500000, guid: d9c936a1116c49379b34983b1fdded8f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::com.ggj2026teamname.gamename.MaskLinePresenter
+  _onTypewriterStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1747398328204555570}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onTypewriterEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1747398328204555570}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   canvasGroup: {fileID: 2625067688739513676}
   lineText: {fileID: 442180729663002242}
   showCharacterNameInLine: 1
@@ -421,7 +451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runner: {fileID: 1421477590435518164}
-  presenter: {fileID: 4723503640892368438}
+  presenter: {fileID: 7867010200801855164}
   separateHurryUpAndAdvanceControls: 0
   multiAdvanceIsCancel: 0
   advanceRequestsBeforeCancellingLine: 2
@@ -1039,7 +1069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 2886483798173764328}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!114 &24422383268348562
@@ -1703,7 +1733,7 @@ MonoBehaviour:
   lineProvider: {fileID: 0}
   saliencyStrategy: 0
   dialoguePresenters:
-  - {fileID: 4723503640892368438}
+  - {fileID: 7867010200801855164}
   - {fileID: 1555806431657392360}
   - {fileID: 6426033773432645231}
   verboseLogging: 0

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd763a7dfd66c4f9082bbf1f091cd09a, type: 3}
+  m_Name: EmptyGameState
+  m_EditorClassIdentifier: Assembly-CSharp::com.ggj2026teamname.gamename.GameState
+  CountSeedsPickedUpChapter1: 0
+  SacredChapter2: 0
+  ProfaneChapter2: 0
+  SacredChapter3: 0
+  ProfaneChapter3: 0

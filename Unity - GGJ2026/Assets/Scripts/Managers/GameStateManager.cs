@@ -17,6 +17,8 @@ public class GameStateManager : Singleton<GameStateManager>
     public Canvas DebugCanvas;
     public TMP_Text DebugText;
 
+    [Header( "Obj Refs" )]
+    public GameState EmptyGameStateSO;
 
     public event System.Action OnUpdatedGameState;
 
@@ -25,10 +27,16 @@ public class GameStateManager : Singleton<GameStateManager>
         base.Awake();
 
         if( CurrentGameState == null )
-            CurrentGameState = new GameState();
+            CurrentGameState = Instantiate( EmptyGameStateSO );
 
         OnUpdatedGameState += UpdateDebugGameState;
         OnUpdatedGameState?.Invoke();
+    }
+
+
+    void Update() {
+        if( Input.GetKeyDown( KeyCode.BackQuote ) )
+            DebugText.enabled = !DebugText.enabled;
     }
 
 

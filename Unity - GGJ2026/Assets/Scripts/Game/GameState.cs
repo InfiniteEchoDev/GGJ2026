@@ -8,9 +8,10 @@ namespace com.ggj2026teamname.gamename
 {
 
 [System.Serializable]
-public class GameState
+[CreateAssetMenu( fileName = "GameState", menuName = "Create SOs/Create GameState" )]
+public class GameState : ScriptableObject
 {
-    public bool? DidPickupBlockingSeedChapter1 = null;
+    public bool DidPickupBlockingSeedChapter1 = false;
     public int CountSeedsPickedUpChapter1 = 0;
     
     public int SacredChapter2 = 0;
@@ -19,7 +20,7 @@ public class GameState
     public int SacredChapter3 = 0;
     public int ProfaneChapter3 = 0;
 
-    public bool? DidPoisonChapter4 = null;
+    public bool DidPoisonChapter4 = false;
 }
 
 }

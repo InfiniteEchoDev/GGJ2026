@@ -11,6 +11,8 @@ public enum GameScene {
     Bootstrap = 0,
     MainMenu,
     Game,
+    Chapter_01,
+    Chapter_02,
 }
 
 public class ScenesManager : Singleton<ScenesManager>

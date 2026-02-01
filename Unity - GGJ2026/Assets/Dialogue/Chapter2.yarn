@@ -1,0 +1,54 @@
+﻿title: chapter2_intro
+---
+Deity: ?
+Deity: I... live? Again? I was... what does the Clan call it... asleep?
+Deity: How many years have passed? Who is this that wears me now?
+===
+title: chapter2_introduce_dedicant
+---
+Deity: This one's thoughts sparkle in the darkness. She is the... descendent? Of the last one. A great granddaughter.
+Deity: Her Clan takes comfort in the imagined power of bloodlines... they pray this one will recreate the success of her precursor.
+Deity: Her shoulders strain beneath the weight of prophecy, but her parents raised her well. Her back is strong; her heart is kind, and full. I have high hopes for this Clan.
+===
+title: chapter2_monolith
+---
+Monolith: RITUAL OF THE ECLIPSE
+Monolith: Many moons ago, a Great Dedicant cleansed this place of danger
+Monolith: In planting the Tree, she lit the darkness
+Monolith: The Dedicant will wear the mask of WASD
+Monolith: The Dedicant will gather fruit, and bring it to the foot of the Tree
+Monolith: RESTRICTION: The Dedicant shall not approach the Red Eyes, for it is profane.
+===
+title: chapter2_musing1
+---
+Deity: This Clan knows me as... WASD? Hah... so be it.
+WASD: I will be what they require me to be.
+===
+title: chapter2_musing2
+---
+WASD: This one's Clan sees its past dimly through a fog. They bid us lay their food at the base of the Tree? But the Tree itself cannot eat it.
+WASD: They misunderstand the ways of the First Beings. They misplace the trauma of their birthing upon the ones that raised them; they speak of a 'danger' and a 'cleansing', forgetting that this Tree was a gift.
+WASD: They re-enact as ritual the things we did from necessity. But this is not their fault; it is the way of any being bound in time.
+WASD: There is no way for this child to remember a time they never saw. That is what WASD is for.
+WASD: This is why they made me.
+===
+title: chapter1_epitaph
+---
+Gravestone: Here lies the First Dedicant
+Gravestone: Planter of the Tree; Worker of Miracles
+Gravestone: Their light illuminates the darkness
+===
+// Use this one for the end-of-chapter scene in the event that the character collected a LARGE quantity of the available collectibles
+title: chapter2_ending_profane
+---
+WASD: This one has gathered barely any of the ritual fruit... she disobeys the writing made upon that curious stone.
+WASD: Does she protest the symbolic nature of her task? Hah. A clever girl.
+WASD: This one is a leader made for hard times.
+===
+// Use this one for the end-of-chapter scene in the event that the character collected a SMALL quantity of the available collectibles
+title: chapter2_ending_sacred
+---
+WASD: This one has gathered a great deal of the ritual fruit... she obeys the writing made upon that curious stone.
+WASD: Her conscience weighs upon her; she seeks to live up to the stature of her predecessors.
+WASD: She will work hard for the betterment of her kin.
+===

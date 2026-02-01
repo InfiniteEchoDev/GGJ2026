@@ -1,0 +1,77 @@
+﻿title: chapter4_intro
+---
+WASD: ?
+WASD: This grove... I know this place, but... something in the roots has shifted.
+WASD: This Dedicant who wears me... they are but a child.
+WASD: A child, and yet... the anger in their heart eats at every nerve ending.
+WASD: This one knows me by a different name... RDFG? Have I become something else to them?
+RDFG: What am I now?
+===
+// Use this one in the event that chapter 3 concluded ended with the 'sacred' ending
+title: chapter3_epitaph_sacred
+---
+Gravestone: Here lies the Twelfth Dedicant
+Gravestone: Uniter of Clans; Guardian of the Old Way
+Gravestone: Her leadership brought us the world
+===
+// Use this one in the event that chapter 3 concluded ended with the 'profane' ending
+title: chapter3_epitaph_profane
+---
+Gravestone: Here lies the Twelfth Dedicant
+Gravestone: Uniter of Clans; Provider of Feasts
+Gravestone: No soul went hungry who foraged in her arbour
+===
+title: chapter4_monolith
+---
+Monolith: RITUAL OF THE ECLIPSE
+Monolith: Many moons ago, a Great Dedicant drove out the dark ones
+Monolith: In planting the Tree, they claimed this land
+Monolith: The Dedicant will wear the mask of RDFG
+Monolith: The Dedicant will weed out the invasive Lionweed (WARNING: Avoid disturbing the native Poisonweed, for it is deadly to the touch!)
+Monolith: RESTRICTION: The Dedicant shall not stand idly upon the power lines, for it is profane.
+===
+title: chapter4_musing1
+---
+RDFG: The writing on the stone renames me... RDFG?
+RDFG: I can see it in this Dedicant's memories... their image of me has merged with that of another Deity. They forget the circumstances of my conception.
+RDFG: This Clan now knows me as a god of... what is this... war? Violence? But the memories are scattered. Is it me? Or is it what has been done to them?
+===
+title: chapter4_musing2
+---
+RDFG: This Dedicant has lived only 17 years, but... how is it his heart bears the scars of a century?
+RDFG: His parents live inside his mind, but they act as his tormentors: They pass to him their hopelessness, their rage, their silence.
+RDFG: A Dedicant like this... if he stays the way he is, he will never be fit to lead a Clan.
+===
+title: chapter4_musing3
+---
+RDFG: This one's dreams are tortured: He longs to do to others what was done to him. I can see that in private, he has already done so. He has hurt his kin; he schemes to do so again.
+RDFG: As leader he'd be poised to bring ruin upon ruin. Yet the boy is still young... not even yet a man. It is the Clan who's hurts he carries... a hurt that precedes him by many many years. The Clan now owes him healing, as it has healed others in the past. But if they fail... if he isn't healed, and he takes command of everyone... 
+RDFG: The stone spoke of a poison plant that resembles the weeds he must collect. The two look quite similar... it would be easy to mistake them...
+RDFG: Until now it has been my way to observe, rather than command or control. But in this case... what if I intervened?
+===
+title: chapter4_poison_plant
+---
+RDFG: Here it is: the Poisonweed. This boy has a keen mind, sharpened by what he has survived. If he looks too closely he'll recognize the danger... but if I reach inside his thoughts, I can distract him just enough.
+-> Make him touch the Poisonweed
+    RDFG: It is done. In the morning he will fall ill. In a fortnight, he will be dead.
+    RDFG: What does the Clan call it... forgiveness? I have denied him this. I have denied it to myself...
+    RDFG: But I do not require it, and perhaps... perhaps this one does not deserve it.
+-> Don't
+    RDFG: No. He is the fruit of his Clan; within him is its sickness and its redemption.
+===
+// Use this one for the end-of-chapter scene in the event that the character collected a LARGE quantity of the available collectibles
+title: chapter4_ending_poisoned
+---
+RDFG: This Clan thinks of me as a god. But what kind?
+RDFG: I was a god of creation, of ritual, of unification, of war.
+RDFG: On this night I become a god who opposes death with death.
+RDFG: Will this Clan survive to see another eclipse? Will I?
+===
+// Use this one for the end-of-chapter scene in the event that the character collected a LARGE quantity of the available collectibles
+title: chapter4_ending_spared
+---
+RDFG: This Clan thinks of me as a god. But what kind?
+RDFG: I was a god of creation, of ritual, of unification, of war.
+RDFG: On this night I become a god of mercy.
+RDFG: Will this Clan survive to see another eclipse? Will I?
+===

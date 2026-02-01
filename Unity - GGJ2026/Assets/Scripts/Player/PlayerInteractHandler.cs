@@ -28,8 +28,13 @@ namespace com.ggj2026teamname.gamename
 
             if (_interactable.CompareTag("Profane"))
             {
-                _profanityKicker.KickProfanity("Profane");
+                _profanityKicker.KickProfanity("Profane!");
             }
+            else if (_interactable.CompareTag("Sacred"))
+            {
+                _profanityKicker.KickProfanity("Sacred!");
+            }
+            
             _interactable.Interact();
         }
 

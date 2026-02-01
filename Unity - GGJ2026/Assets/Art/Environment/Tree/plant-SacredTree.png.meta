@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 32b174bc87fc62e4aa75961610d8f06f
+guid: 279fe27cf4fb7384da39f35c4732f8a1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Plant_Native_smallLeafies_0
+      name: plant-SacredTree_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 144
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,20 +125,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfa95c5362e71d14cbad51346251aedf
-      internalID: -920272475
+      spriteID: 6fc21664e90188d4fa24a53868976478
+      internalID: 1045672581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Plant_Native_smallLeafies_1
+      name: plant-SacredTree_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 144
         y: 0
-        width: 32
-        height: 32
+        width: 144
+        height: 160
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,52 +147,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72e94c097b4178142a5e57ed7f905124
-      internalID: -745638639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Plant_Native_smallLeafies_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e39f346fab49a7641bd6b53325f9cc74
-      internalID: 455559275
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Plant_Native_smallLeafies_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72a3239e3ef26cf46899a350d78c95fe
-      internalID: -965573285
+      spriteID: 721f1d84776605042943d13203fda217
+      internalID: 2128817542
       vertices: []
       indices: 
       edges: []
@@ -201,7 +157,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: bb66b2553f151cc42b3950ee3e0ed105
+    spriteID: 019cc049fa079774e850d7dcdac4db0d
     internalID: 0
     vertices: []
     indices: 
@@ -211,12 +167,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":1.0},"gridSpriteSize":{"x":144.0,"y":160.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Plant_Native_smallLeafies_0: -920272475
-      Plant_Native_smallLeafies_1: -745638639
-      Plant_Native_smallLeafies_2: 455559275
-      Plant_Native_smallLeafies_3: -965573285
+      plant-SacredTree_0: 1045672581
+      plant-SacredTree_1: 2128817542
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

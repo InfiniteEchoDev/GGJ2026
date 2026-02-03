@@ -43,6 +43,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: MaskEyes
+    uniqueID: 3769179809
+    locked: 0
   m_RenderingLayers:
   - Default
   - Light Layer 1

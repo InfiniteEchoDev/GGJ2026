@@ -46,6 +46,9 @@ TagManager:
   - name: MaskEyes
     uniqueID: 3769179809
     locked: 0
+  - name: Dialog
+    uniqueID: 4008579389
+    locked: 0
   m_RenderingLayers:
   - Default
   - Light Layer 1

@@ -16,6 +16,8 @@ public class LocalSceneManager : Singleton<LocalSceneManager>
     public GameObject GameManagerPrefab;
     public MaskOverlayController MaskOverlayController;
     public Image SceneFader;
+    public ChapterSceneDirector ChapterSceneDirector;
+    
 
     protected override void Awake() {
         base.Awake();
@@ -30,6 +32,11 @@ public class LocalSceneManager : Singleton<LocalSceneManager>
     public void OnBeginScene() {
         // Prepare anything the scene might need
         // Runs before Unity->Awake()
+                
+        if (ChapterSceneDirector)
+        {
+            ChapterSceneDirector.Initialize();
+        }
     }
 
     public bool OnBeforeLoadOtherSceneAsync()

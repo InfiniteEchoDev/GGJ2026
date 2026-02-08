@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3214845282594268246}
   - component: {fileID: 5434984656415404598}
   - component: {fileID: 750478467300742335}
+  - component: {fileID: 6883343955246082302}
   m_Layer: 5
   m_Name: PixelPerfectCanvas
   m_TagString: Untagged
@@ -30,8 +31,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3832204642934173961}
-  m_Father: {fileID: 1344598660927088373}
+  - {fileID: 2352396708795858573}
+  m_Father: {fileID: 1654195553246437076}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -73,10 +74,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 398, y: 224}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -84,6 +85,27 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 0
+--- !u!114 &6883343955246082302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33210988791358994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ccaf4d59a23b914e98ea7e26e1f91c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::com.ggj2026teamname.gamename.PixelPerfectUIController
+  pixelPerfectCamera: {fileID: 8712699228233031872}
+  pixelPerfectCanvases:
+  - {fileID: 5434984656415404598}
+  - {fileID: 5046957203183140676}
+  positionRects:
+  - {fileID: 2352396708795858573}
+  - {fileID: 1395930706674319982}
+  renderTextureOutputs:
+  - {fileID: 8332265342452899344}
 --- !u!1 &108524238512987394
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,7 +118,7 @@ GameObject:
   - component: {fileID: 1435564464370410699}
   - component: {fileID: 8332265342452899344}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: GameplayImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,7 +136,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3214845282594268246}
+  m_Father: {fileID: 2352396708795858573}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -218,10 +240,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.028856827
-    y: 0.6632452
-    width: 0.44173142
-    height: 0.44216347
+    x: 0
+    y: 0
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -230,7 +252,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 95
+    m_Bits: 223
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -513,10 +535,10 @@ Transform:
   - {fileID: 8297706101170276067}
   - {fileID: 4139594524488580268}
   - {fileID: 279687861656911336}
-  - {fileID: 1344598660927088373}
+  - {fileID: 3214845282594268246}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &8252615675555798926
+--- !u!1 &7251768912092211092
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -524,49 +546,34 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1344598660927088373}
-  - component: {fileID: 7294551532099501694}
-  m_Layer: 0
-  m_Name: ChapterSceneDirector
+  - component: {fileID: 2352396708795858573}
+  m_Layer: 5
+  m_Name: PixelPerfectCanvasContentRect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1344598660927088373
-Transform:
+--- !u!224 &2352396708795858573
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8252615675555798926}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 7251768912092211092}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3214845282594268246}
-  m_Father: {fileID: 1654195553246437076}
+  - {fileID: 3832204642934173961}
+  m_Father: {fileID: 3214845282594268246}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7294551532099501694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8252615675555798926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43a6eb2b8a47e4a478d6ae6deb67817f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::com.ggj2026teamname.gamename.ChapterSceneDirector
-  uiCamera: {fileID: 6136556292282183979}
-  playerCamera: {fileID: 2798952144728835680}
-  player: {fileID: 0}
-  pixelPerfectCamera: {fileID: 8712699228233031872}
-  renderTextureOutputs:
-  - {fileID: 8332265342452899344}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1446722641875642337
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -678,9 +685,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4930992796962691588, guid: 626ca0faad78644099f085eb957c7616, type: 3}
-      propertyPath: ChapterSceneDirector
+      propertyPath: PlayerCamera
       value: 
-      objectReference: {fileID: 7294551532099501694}
+      objectReference: {fileID: 2798952144728835680}
+    - target: {fileID: 4930992796962691588, guid: 626ca0faad78644099f085eb957c7616, type: 3}
+      propertyPath: DialogueRunner
+      value: 
+      objectReference: {fileID: 2602846392806252109}
     - target: {fileID: 4930992796962691588, guid: 626ca0faad78644099f085eb957c7616, type: 3}
       propertyPath: MaskOverlayController
       value: 
@@ -707,13 +718,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1654195553246437076}
     m_Modifications:
+    - target: {fileID: 442180729663002242, guid: 1ffda9ce2a82f30478fef7bf91e0a8bf, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 536010198313415268, guid: 1ffda9ce2a82f30478fef7bf91e0a8bf, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 1466003224715159451, guid: 1ffda9ce2a82f30478fef7bf91e0a8bf, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1466003224715159451, guid: 1ffda9ce2a82f30478fef7bf91e0a8bf, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 8.900002
+      value: 8.899994
       objectReference: {fileID: 0}
     - target: {fileID: 2552672244045379074, guid: 1ffda9ce2a82f30478fef7bf91e0a8bf, type: 3}
       propertyPath: m_AnchorMax.y
@@ -873,6 +892,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3755703598881663617, guid: 1ffda9ce2a82f30478fef7bf91e0a8bf, type: 3}
   m_PrefabInstance: {fileID: 4009665291533011097}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &1395930706674319982 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2664555114100673271, guid: 1ffda9ce2a82f30478fef7bf91e0a8bf, type: 3}
+  m_PrefabInstance: {fileID: 4009665291533011097}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2602846392806252109 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1421477590435518164, guid: 1ffda9ce2a82f30478fef7bf91e0a8bf, type: 3}
@@ -884,6 +908,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!223 &5046957203183140676 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 8191860258513991645, guid: 1ffda9ce2a82f30478fef7bf91e0a8bf, type: 3}
+  m_PrefabInstance: {fileID: 4009665291533011097}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8913351015799703401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -892,6 +921,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1654195553246437076}
     m_Modifications:
+    - target: {fileID: 1074171314380442906, guid: 119e9b8fbe43050498158aed06232e83, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2323542199598780737, guid: 119e9b8fbe43050498158aed06232e83, type: 3}
       propertyPath: _dialogueRunner
       value: 
@@ -899,10 +932,14 @@ PrefabInstance:
     - target: {fileID: 3666550634555276126, guid: 119e9b8fbe43050498158aed06232e83, type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 6136556292282183979}
+      objectReference: {fileID: 2798952144728835680}
     - target: {fileID: 6225149888891335782, guid: 119e9b8fbe43050498158aed06232e83, type: 3}
       propertyPath: m_Name
       value: MaskOverlay Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6894900860181329515, guid: 119e9b8fbe43050498158aed06232e83, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8062798610870430718, guid: 119e9b8fbe43050498158aed06232e83, type: 3}
       propertyPath: m_PreserveAspect

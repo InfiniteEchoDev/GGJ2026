@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad228b2dff925ce43af87650a13f5cfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::com.ggj2026teamname.gamename.Player
+  inputSystem: {fileID: 6960980067715685277}
 --- !u!114 &1969089383861300556
 MonoBehaviour:
   m_ObjectHideFlags: 0

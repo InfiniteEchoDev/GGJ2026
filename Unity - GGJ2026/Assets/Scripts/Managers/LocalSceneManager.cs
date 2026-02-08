@@ -1,10 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-
+using Cysharp.Threading.Tasks;
 using Pixelplacement;
-
+using R3;
 using UnityEngine;
 using UnityEngine.UI;
+using Yarn.Unity;
 
 
 namespace com.ggj2026teamname.gamename
@@ -12,12 +14,15 @@ namespace com.ggj2026teamname.gamename
 
 public class LocalSceneManager : Singleton<LocalSceneManager>
 {
-
+    public Player Player { get; private set; }
+    public Camera PlayerCamera;
     public GameObject GameManagerPrefab;
+    public DialogueRunner DialogueRunner;
     public MaskOverlayController MaskOverlayController;
     public Image SceneFader;
-    public ChapterSceneDirector ChapterSceneDirector;
     
+    public Observable<bool> IsDialogueRunning { get; private set; }
+    public Observable<bool> IsGlobalAnimationRunning { get; private set; }
 
     protected override void Awake() {
         base.Awake();
@@ -28,14 +33,42 @@ public class LocalSceneManager : Singleton<LocalSceneManager>
         }
     }
 
-
-    public void OnBeginScene() {
+    public async UniTask OnBeginScene() {
         // Prepare anything the scene might need
         // Runs before Unity->Awake()
-                
-        if (ChapterSceneDirector)
+
+        if (DialogueRunner)
         {
-            ChapterSceneDirector.Initialize();
+            IsDialogueRunning = Observable
+                .EveryValueChanged(DialogueRunner, runner => runner.IsDialogueRunning, destroyCancellationToken);
+        }
+        else
+        {
+            IsDialogueRunning = Observable.Return(false);
+        }
+
+        if (MaskOverlayController)
+        {
+            IsGlobalAnimationRunning = MaskOverlayController.IsShowingMask;
+        }
+        else
+        {
+            IsGlobalAnimationRunning = Observable.Return(false);
+        }
+
+        Player = FindFirstObjectByType<Player>();
+
+        // wait for whatever shit needs to do its Awake() and Update() shenanigans before beginning the game flow
+        await UniTask.DelayFrame(1);
+
+        if (MaskOverlayController)
+        {
+            MaskOverlayController.Begin();
+        }
+        
+        if (Player)
+        {
+            Player.Begin();
         }
     }
 

@@ -1190,6 +1190,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2323542199598780737, guid: 119e9b8fbe43050498158aed06232e83, type: 3}
+      propertyPath: _sceneToSwitchTo
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2323542199598780737, guid: 119e9b8fbe43050498158aed06232e83, type: 3}
       propertyPath: _skipStartAnimation
       value: 1
       objectReference: {fileID: 0}

@@ -16,7 +16,7 @@ namespace com.ggj2026teamname.gamename
          {
              _actions = new InputSystem_Actions();              
              _playerActions = _actions.Player;                      
-             _playerActions.AddCallbacks(this);                      
+             _playerActions.AddCallbacks(this);
          }
         
          private void OnDestroy()

@@ -14,7 +14,7 @@ TagManager:
   - Water
   - UI
   - Environment
-  - 
+  - PixelArtUI
   - 
   - 
   - 
@@ -42,6 +42,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: MaskEyes
+    uniqueID: 3769179809
+    locked: 0
+  - name: Dialog
+    uniqueID: 4008579389
     locked: 0
   m_RenderingLayers:
   - Default

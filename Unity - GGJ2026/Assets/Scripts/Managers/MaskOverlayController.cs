@@ -1,3 +1,5 @@
+using System;
+using R3;
 using UnityEngine;
 using UnityEngine.Serialization;
 using Yarn.Unity;
@@ -20,16 +22,13 @@ namespace com.ggj2026teamname.gamename
         
         [Header("Debug")]
         [SerializeField] private bool _skipStartAnimation = false;
+
+        public Observable<bool> IsShowingMask => _isShowingMask;
         
-        void Start()
+        private readonly ReactiveProperty<bool> _isShowingMask = new(false);
+
+        private void Awake()
         {
-            if (_skipStartAnimation)
-            {
-                return;
-            }
-            
-            _maskOverlayAnimator.SetTrigger("SceneStartFadeIn");
-            
             // This is the wrong way to do this but we're in a jam! --mrs
             if (_dialogueRunner is null)
             {
@@ -42,22 +41,37 @@ namespace com.ggj2026teamname.gamename
             }
         }
 
+        public void Begin()
+        {
+            if (_skipStartAnimation)
+            {
+                return;
+            }
+            
+            _maskOverlayAnimator.SetTrigger("SceneStartFadeIn");
+        }
+
         public void OnSceneStartFadeIn()
         {
             _dialogueRunner.onDialogueComplete.AddListener(OnStartDialogueComplete);
             _dialogueRunner.StartDialogue(_sceneStartDialogueNode);
-            _player.SetPlayerInputState(false);
+
+            _isShowingMask.Value = true;
         }
 
         private void OnStartDialogueComplete()
         {
             _dialogueRunner.onDialogueComplete.RemoveListener(OnStartDialogueComplete);
             _maskOverlayAnimator.SetTrigger("SceneStartFadeOut");
+            
+            _isShowingMask.Value = false;
         }
 
         public void TriggerFadeOutForSceneChange()
         {
             _maskOverlayAnimator.SetTrigger("SceneEndFadeIn");
+            
+            _isShowingMask.Value = true;
         }
         public void MainMenuFadeOutForSceneChange()
         {
@@ -74,7 +88,6 @@ namespace com.ggj2026teamname.gamename
         {
             _dialogueRunner.onDialogueComplete.RemoveListener(OnEndDialogueComplete);
             _maskOverlayAnimator.SetTrigger("SceneEndFadeOut");
-            _player.SetPlayerInputState(false);
         }
         
         public void OnFadeOutChangeScene()

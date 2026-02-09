@@ -103,7 +103,7 @@ namespace com.ggj2026teamname.gamename
 
                             Vector3 correction = snappedWorld - world;
 
-                            positionRect.position += correction;
+                            //positionRect.position += correction;
                         });
 
                 }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using R3;
+using UnityEngine;
 
 namespace com.ggj2026teamname.gamename.Interactables
 {
@@ -6,20 +7,36 @@ namespace com.ggj2026teamname.gamename.Interactables
     {
         [SerializeField] private GameObject _activeObjectIndicator;
         public abstract void Interact();
-                    
+
+        public ReadOnlyReactiveProperty<bool> PlayerIsInInteractionZone => _playerIsInInteractionZone;
+        private readonly ReactiveProperty<bool> _playerIsInInteractionZone = new(false);
+        
         public virtual void OnInteractAreaEntered()
         {
-            _activeObjectIndicator.SetActive(true);
+            _playerIsInInteractionZone.Value = true;
+
+            if (_activeObjectIndicator)
+            {
+                _activeObjectIndicator.SetActive(true);
+            }
         }
 
         public virtual void OnInteractAreaExited()
         {
-            _activeObjectIndicator.SetActive(false);
+            _playerIsInInteractionZone.Value = false;
+
+            if (_activeObjectIndicator)
+            {
+                _activeObjectIndicator.SetActive(false);
+            }
         }
                         
         protected void Awake()
         {
-            _activeObjectIndicator.SetActive(false);
+            if (_activeObjectIndicator)
+            {
+                _activeObjectIndicator.SetActive(false);
+            }
         }
     }
 }
